@@ -1,6 +1,5 @@
 #pragma once
-//#include <iostream>
-//#include<fstream>
+
 #include "AnimationFrame.h"
 class Slug{
 public:
@@ -62,12 +61,10 @@ public:
 	}
 
 private:
-
 	AnimationFrame Frames;
 	std::string spaces;
 	int i = 0;
 	const int milli_seconds = 500;
 	bool isUpdating =true;
-
 
 };

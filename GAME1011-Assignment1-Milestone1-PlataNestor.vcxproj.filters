@@ -26,9 +26,15 @@
     <ClInclude Include="Slug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Slime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Slug.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Slime.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

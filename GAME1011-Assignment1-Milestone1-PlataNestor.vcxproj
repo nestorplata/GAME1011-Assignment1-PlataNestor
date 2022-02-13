@@ -144,10 +144,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimationFrame.h" />
+    <ClInclude Include="Slime.h" />
     <ClInclude Include="Slug.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Slug.txt" />
+    <Text Include="Slime.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
