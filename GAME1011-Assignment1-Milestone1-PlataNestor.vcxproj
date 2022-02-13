@@ -144,7 +144,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimationFrame.h" />
-    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Slug.h" />
   </ItemGroup>
   <ItemGroup>
