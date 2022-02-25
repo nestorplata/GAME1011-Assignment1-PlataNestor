@@ -46,5 +46,8 @@
     <Text Include="Slime2.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Animation.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

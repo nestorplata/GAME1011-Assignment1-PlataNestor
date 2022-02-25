@@ -5,37 +5,54 @@ class Slime2 {
 public:
 	Slime2() {
 		FrameGenerator.setfile("Slime2.txt");
-		frame0 = FrameGenerator.getFrame(0);
-		frame1 = FrameGenerator.getFrame(1);
-		frame2 = FrameGenerator.getFrame(2);
-
+		frame[0] = FrameGenerator.getFrame(0, 0);
+		frame[1] = FrameGenerator.getFrame(1, 0);
+		frame[2] = FrameGenerator.getFrame(2, 0);
+		frame[3] = FrameGenerator.getFrame(3, 0);
 		FrameGenerator.close();;
 	}
 
-	void Update() {
+	void Update() {	
+		system("CLS");
+		std::cout << Vspaces <<Vspaces<<frame[0];
+		Sleep(milli_seconds*3);
 
-		while (isUpdating) {
+		system("CLS");
+		std::cout << Vspaces << Vspaces << frame[1];
+		Sleep(milli_seconds * 3);
 
-			//std::cout << frame0;
-			//std::cout << spaces << frame1 << std::endl;
-			//std::cout << frame2 << std::endl;
+		system("CLS");
+		std::cout << Vspaces << frame[0];
+		Sleep(milli_seconds * 3);
 
+		system("CLS");
+		std::cout << frame[2];
+		Sleep(milli_seconds * 3);
 
+		system("CLS");
+		std::cout << frame[3];
+		Sleep(milli_seconds * 3);
 
-			Sleep(milli_seconds*3);
-			isUpdating = false;
-		}
+		system("CLS");
+		std::cout << Vspaces << frame[3];
+		Sleep(milli_seconds * 3);
+
+		system("CLS");
+		std::cout << Vspaces << Vspaces << frame[1];
+		Sleep(milli_seconds * 3);
+
+		system("CLS");
+		std::cout << Vspaces << Vspaces << frame[0];
+		Sleep(milli_seconds * 3);
 
 	}
 
 private:
 	AnimationFrame2 FrameGenerator;
-	std::string spaces = "\t\t\t\t";
-	std::string frame0;
-	std::string frame1;
-	std::string frame2;
+	std::string Vspaces = "\n\n\n";
+	std::string frame[4];
+
 	const int numFrames = 3;
-	const int milli_seconds = 500;
-	bool isUpdating = true;
+	const int milli_seconds = 300;
 
 };

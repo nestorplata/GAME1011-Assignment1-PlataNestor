@@ -153,6 +153,7 @@
     <Text Include="Slime2.txt" />
     <Text Include="Slug.txt" />
     <Text Include="Slime.txt" />
+    <Text Include="Animation.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
