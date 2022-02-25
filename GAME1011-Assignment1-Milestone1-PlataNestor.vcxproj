@@ -144,10 +144,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimationFrame.h" />
+    <ClInclude Include="AnimationFrame2.h" />
     <ClInclude Include="Slime.h" />
+    <ClInclude Include="slime2.h" />
     <ClInclude Include="Slug.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Slime2.txt" />
     <Text Include="Slug.txt" />
     <Text Include="Slime.txt" />
   </ItemGroup>
