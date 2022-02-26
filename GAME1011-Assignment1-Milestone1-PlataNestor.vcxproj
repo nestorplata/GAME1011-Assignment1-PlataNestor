@@ -140,20 +140,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Afformation.cpp" />
+    <ClCompile Include="AnimetionFrame.cpp" />
+    <ClCompile Include="Ant.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Rat.cpp" />
+    <ClCompile Include="Slime.cpp" />
+    <ClCompile Include="Slug.cpp" />
+    <ClCompile Include="Spider.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Afformation.h" />
     <ClInclude Include="AnimationFrame.h" />
-    <ClInclude Include="AnimationFrame2.h" />
+    <ClInclude Include="Ant.h" />
+    <ClInclude Include="Rat.h" />
     <ClInclude Include="Slime.h" />
-    <ClInclude Include="slime2.h" />
-    <ClInclude Include="Slug.h" />
+    <ClInclude Include="Slug.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Spider.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Slime2.txt" />
-    <Text Include="Slug.txt" />
+    <Text Include="Ant.txt" />
+    <Text Include="Rat.txt" />
     <Text Include="Slime.txt" />
-    <Text Include="Animation.txt" />
+    <Text Include="Slug.txt" />
+    <Text Include="Spider.txt" />
+    <Text Include="Afformation.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

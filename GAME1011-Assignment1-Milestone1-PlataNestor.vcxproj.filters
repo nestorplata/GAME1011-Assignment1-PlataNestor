@@ -18,21 +18,48 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Slime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimetionFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Slug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Afformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AnimationFrame.h">
+    <ClInclude Include="Slug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Slug.h">
+    <ClInclude Include="AnimationFrame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Slime.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AnimationFrame2.h">
+    <ClInclude Include="Rat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="slime2.h">
+    <ClInclude Include="Spider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Afformation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -43,10 +70,16 @@
     <Text Include="Slime.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="Slime2.txt">
+    <Text Include="Rat.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="Animation.txt">
+    <Text Include="Spider.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Ant.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Afformation.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

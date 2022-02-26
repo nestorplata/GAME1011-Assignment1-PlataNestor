@@ -2,61 +2,26 @@
 
 #include <iostream>
 #include <fstream>
+#include <string>
+#include<Windows.h>
 
 class AnimationFrame {
 public:
 
-	void setfile(std::string File)
-	{
-		inFile.open(File);
-		if (!inFile) {
-			std::cout << "Unable to open file datafile.txt";
-		}
-		else
-		{
-			setframe1();
-			setframe2();
-			setframe3();
-		}
-	}
+	virtual void Update() = 0;
 
-	void setframe1(){
-		inFile.get(frame1[0], 11);
-		inFile.get(frame1[2], 11);
-		inFile.get(frame1[4], 11);
-	}
 
-	void setframe2() {
-		inFile.get(frame2[1], 11);
-		inFile.get(frame2[3], 11);
-		inFile.get(frame2[6], 11);
-	}
-	void setframe3() {
-		inFile.get(frame3[2], 11);
-		inFile.get(frame3[5], 11);
-		inFile.get(frame3[8], 11);
-	}
+	void SetFile(std::string File);
 
-	std::string getframe1(int i) {
-		return frame1[i];
-	}
+	std::string GetFrame(int n, int h);
 
-	std::string getframe2(int i) {
-		return frame2[i];
-	}
+	void Close();
 
-	std::string getframe3(int i) {
-		return frame3[i];
-	}
-
-	void close() {
-		inFile.close();
-	}
 
 private:
-	std::ifstream inFile;
-	char frame1[5][10];
-	char frame2[7][10];
-	char frame3[9][10];
+	std::ifstream m_inFile;
+	char lines[3][11];
+	std::string frame;
+	std::string Hspaces = "\t\t";
 
 };
