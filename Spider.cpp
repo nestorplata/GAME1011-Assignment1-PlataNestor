@@ -2,9 +2,9 @@
 
 Spider::Spider() {
 	SetFile("Spider.txt");
-	frame[0] = GetFrame(0, 0);
-	frame[1] = GetFrame(1, 1);
-	frame[2] = GetFrame(2, 2);
+	m_frame[0] = GetFrame(0, 0);
+	m_frame[1] = GetFrame(1, 1);
+	m_frame[2] = GetFrame(2, 2);
 	Close();
 }
 
@@ -15,8 +15,8 @@ void Spider::Update() {
 	{
 		std::cout << "\\\\" << std::endl;
 	}
-	std::cout <<  frame[0];
-	Sleep(milli_seconds * 3);
+	std::cout <<  m_frame[0];
+	Sleep(s_milli_seconds * 3);
 
 	//2
 	system("CLS");
@@ -26,8 +26,8 @@ void Spider::Update() {
 		spaces +="  ";
 	}
 
-	std::cout << frame[1];
-	Sleep(milli_seconds * 3);
+	std::cout << m_frame[1];
+	Sleep(s_milli_seconds * 3);
 
 	//3
 	system("CLS");
@@ -35,8 +35,8 @@ void Spider::Update() {
 	{
 		std::cout << "\\\\";
 	}
-	std::cout << std::endl<<frame[2];
-	Sleep(milli_seconds * 3);
+	std::cout << std::endl<<m_frame[2];
+	Sleep(s_milli_seconds * 3);
 
 	//4
 	system("CLS");
@@ -47,8 +47,8 @@ void Spider::Update() {
 		spaces += "  ";
 	}
 
-	std::cout << frame[1];
-	Sleep(milli_seconds * 3);
+	std::cout << m_frame[1];
+	Sleep(s_milli_seconds * 3);
 
 	//5
 	system("CLS");
@@ -56,7 +56,7 @@ void Spider::Update() {
 	{
 		std::cout << "\\\\" << std::endl;
 	}
-	std::cout << frame[0];
+	std::cout << m_frame[0];
 
-	Sleep(milli_seconds * 3);
+	Sleep(s_milli_seconds * 3);
 }

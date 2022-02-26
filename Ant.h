@@ -8,10 +8,10 @@ public:
 	void Update();
 
 private:
-	std::string Vspaces = "\n\n\n";
-	std::string frame[3];
+	std::string m_Vspaces = "\n\n\n";
+	std::string m_frame[3];
 	std::string spaces = "\t\t\t\t   ";
 
-	const int milli_seconds = 300;
+	const int s_milli_seconds = 300;
 
 };

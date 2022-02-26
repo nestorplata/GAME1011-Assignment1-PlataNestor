@@ -10,27 +10,27 @@ void AnimationFrame::SetFile(std::string File)
 
 std::string AnimationFrame::GetFrame(int n, int h)
 {
-	frame.erase(0, 200);
+	m_frame.erase(0, 200);
 	for (int i = 0; i < 3; i++)
 	{
 		for (int k = 0; k < h; k++)
 		{
-			frame += Hspaces;
+			m_frame += m_Hspaces;
 		}
 
 		m_inFile.ignore(1 + 10 * i + 33 * n, (char)(48 + i + 3 * n));
-		m_inFile.get(lines[i], 11, (char)(49 + i + 3 * n));
+		m_inFile.get(m_lines[i], 11, (char)(49 + i + 3 * n));
 		for (int j = 0; j < 11; j++)
 		{
-			frame.push_back(lines[i][j]);
+			m_frame.push_back(m_lines[i][j]);
 
 		}
 
-		frame += '\n';
+		m_frame += '\n';
 
 	}
 
-	return frame;
+	return m_frame;
 }
 
 

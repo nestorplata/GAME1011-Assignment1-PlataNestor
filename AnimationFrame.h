@@ -20,8 +20,8 @@ public:
 
 private:
 	std::ifstream m_inFile;
-	char lines[3][11];
-	std::string frame;
-	std::string Hspaces = "\t\t";
+	char m_lines[3][11];
+	std::string m_frame;
+	std::string m_Hspaces = "\t\t";
 
 };

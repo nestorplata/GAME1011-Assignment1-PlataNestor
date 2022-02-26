@@ -7,9 +7,9 @@ public:
 	void Update();
 
 private:
-	std::string Vspaces = "\n\n\n";
-	std::string frame[3];
+	std::string m_Vspaces = "\n\n\n";
+	std::string m_frame[3];
 
-	const int milli_seconds = 500;
+	const int s_milli_seconds = 500;
 
 };
